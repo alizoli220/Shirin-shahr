@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه دفترچه اقساط</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>دفترچه اقساط ماهانه</h2>
+    <form id="loanForm">
+        <label>رقم قرارداد: <input type="number" id="contractAmount"></label>
+        <label>مدت قرارداد (ماه): <input type="number" id="installments"></label>
+        <label>پیش پرداخت: <input type="number" id="prePayment"></label>
+        <label>تاریخ شروع اقساط: <input type="date" id="startDate"></label>
+        <button type="button" onclick="generateInstallments()">محاسبه اقساط</button>
+    </form>
+    <div id="installmentTable"></div>
+    <button onclick="downloadWord()">دریافت فایل Word</button>
+    <script src="script.js"></script>
+</body>
+</html>
