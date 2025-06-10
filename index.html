@@ -15,8 +15,18 @@
         <label>تاریخ شروع اقساط: <input type="date" id="startDate"></label>
         <button type="button" onclick="generateInstallments()">محاسبه اقساط</button>
     </form>
+    
+    <h3>مبلغ پیش‌پرداخت: <span id="prePaymentDisplay">0</span></h3>
+
     <div id="installmentTable"></div>
+
+    <h3>واریزی‌ها</h3>
+    <label>مبلغ واریزی: <input type="number" id="paymentAmount"></label>
+    <label>تاریخ واریز: <input type="date" id="paymentDate"></label>
+    <button onclick="updatePayments()">ثبت پرداخت</button>
+
     <button onclick="downloadWord()">دریافت فایل Word</button>
+
     <script src="script.js"></script>
 </body>
 </html>
